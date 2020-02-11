@@ -1,0 +1,14 @@
+<b>Form Control: </b>
+<form [formGroup]="form">
+	<app-input formControlName="test"></app-input>
+	<div>Min length : 10 || current: {{ test.value?.length || 0 }}</div>
+</form>
+<pre>dirty = {{ test.dirty }}</pre>
+<pre>valid = {{ test.valid }}</pre>
+<pre>touched = {{ test.touched }}</pre>
+<br/>
+<br/>
+<b>NgModel: </b>
+<app-input [(ngModel)]="myModel"></app-input>
+
+{{myModel}}
